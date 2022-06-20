@@ -133,14 +133,23 @@ namespace NumberGuesser
 
         static void GreetUser()
         {
-            Console.WriteLine(" Welcome to Number Guess App");
+            Console.WriteLine("---------------------------------\n");
+            Console.WriteLine("Welcome to Number Guess App\n");
+            Console.WriteLine("-------------------------------\n\n");
+
             // Ask user name 
-            Console.Write("What is your name? ");
+            Console.Write("What is your name?");
+
+            Console.WriteLine();
 
             // Get user input 
             string userName = Console.ReadLine();
 
+           
+            Thread.Sleep(2000);
+
             Console.WriteLine("Hello {0}, let's play a game...", userName);
+            Console.WriteLine();
 
 
         }
